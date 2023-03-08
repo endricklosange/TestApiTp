@@ -10,7 +10,7 @@ exports.verifyToken = (req, res) => {
         res.status(403);
         res.json({ message: "Acces interdit : token manquant" });
       } else {
-        nex();
+        nextTick();
       }
     });
   } else {

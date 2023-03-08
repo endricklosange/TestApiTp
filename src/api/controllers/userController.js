@@ -35,10 +35,10 @@ exports.userLogin = (req, res) => {
         jwt.sign(
           userData,
           process.env.JWT_KEY,
-          { expireIN: "30DAYS" },
+          { expiresIn: "30DAYS" },
           (error, token) => {
             if (error) {
-              res.status(500), console.log(error);
+              res.status(500), console.log("err1255 " + error);
               res.json({ message: "impossilbe de générer le token" });
             } else {
               res.status(200);
