@@ -1,0 +1,363 @@
+{
+	"info": {
+		"_postman_id": "3b9de0af-ac61-4430-a753-109bdeee5272",
+		"name": "Tp test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16223262"
+	},
+	"item": [
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVuZHJpY2tsb3NhbmdlQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4MDkwMjAxMCwiZXhwIjoxNjgzNDk0MDEwfQ.daOyL6M83h11JWENMF0TLadiq45CMQQ64s2yVYWBVsg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Narut\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:3000/posts",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:3000/posts",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:3000/posts",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVuZHJpY2tsb3NhbmdlQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4MDkwMjAxMCwiZXhwIjoxNjgzNDk0MDEwfQ.daOyL6M83h11JWENMF0TLadiq45CMQQ64s2yVYWBVsg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Narutoooooooooooooooooooooooo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:3000/posts/64308c07229461bc53d5b27b",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"64308c07229461bc53d5b27b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVuZHJpY2tsb3NhbmdlQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4MDkwMjAxMCwiZXhwIjoxNjgzNDk0MDEwfQ.daOyL6M83h11JWENMF0TLadiq45CMQQ64s2yVYWBVsg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://0.0.0.0:3000/posts/64308c07229461bc53d5b27b",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"64308c07229461bc53d5b27b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"endricklosange@gmail.com\",\r\n    \"password\": \"endrick\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:3000/user/register",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"endricklosange@gmail.com\",\r\n    \"password\": \"endrick\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:3000/user/login",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "Post comment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVuZHJpY2tsb3NhbmdlQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4MDkwMjAxMCwiZXhwIjoxNjgzNDk0MDEwfQ.daOyL6M83h11JWENMF0TLadiq45CMQQ64s2yVYWBVsg",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"comme1\",\r\n    \"message\": \"Narfdsdfsdfdsfezut\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:3000/posts/64308ce2229461bc53d5b281/comments",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"64308ce2229461bc53d5b281",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post comment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:3000/posts/64308ce2229461bc53d5b281/comments",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"64308ce2229461bc53d5b281",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get comment by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:3000/comments/64308e09229461bc53d5b289",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "3000",
+							"path": [
+								"comments",
+								"64308e09229461bc53d5b289"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVuZHJpY2tsb3NhbmdlQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4MDkwMjAxMCwiZXhwIjoxNjgzNDk0MDEwfQ.daOyL6M83h11JWENMF0TLadiq45CMQQ64s2yVYWBVsg",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"comme0\",\r\n    \"message\": \"Narfdsdfsdfdsfezut\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:3000/comments/64308e09229461bc53d5b289",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "3000",
+							"path": [
+								"comments",
+								"64308e09229461bc53d5b289"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
